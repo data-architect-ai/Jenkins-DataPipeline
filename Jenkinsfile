@@ -6,9 +6,6 @@ pipeline {
             steps {
                 // Set up environment, install dependencies, etc.
                 // Example:
-                sh 'apt install python3.11-venv'
-                sh 'python3 -m venv venv'
-                sh 'source venv/bin/activate'
                 sh 'pip3 install -r requirements.txt'  // Install required Python packages
             }
         }
