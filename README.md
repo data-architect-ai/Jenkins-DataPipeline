@@ -117,7 +117,7 @@ docker logs <container_id>
 
 Follow the setup instructions provided by Jenkins to complete the installation.
 
-![Screenshot 2024-07-02 at 2 08 08 AM](https://github.com/manojbusam/Jenkins-DataPipeline/assets/44409170/1dae0736-4f98-4a9b-bf56-982f01e824a8)
+![Screenshot 2024-07-02 at 2 08 27 AM](https://github.com/manojbusam/Jenkins-DataPipeline/assets/44409170/aad3a392-e1d4-4992-bd89-ae8aab621d60)
 
 
 ## Project Structure
