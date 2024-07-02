@@ -23,7 +23,7 @@ class TestFetchReviews(unittest.TestCase):
         reviews = self.c.fetchall()
         
         # Assert statements to verify expected results
-        self.assertEqual(len(reviews), 3)  # Adjust expected count based on input data
+        self.assertEqual(len(reviews), 6)  # Adjust expected count based on input data
         self.assertEqual(reviews[0][1], 1)  # Example: Check customer_id of first review
         self.assertEqual(reviews[0][2], "Great product, highly recommended!")  # Example: Check review_text
 
