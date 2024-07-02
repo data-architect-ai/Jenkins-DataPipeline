@@ -1,17 +1,13 @@
-To organize and format your README.md for clarity and ease of understanding, here's how you can structure it:
-
----
-
-# Jenkins-DataPipeline
+# Reviews Sentiment Jenkins DataPipeline
 
 This repository contains scripts and files for setting up a Jenkins CI/CD pipeline to transform customer reviews into sentiment analysis results.
 
 
+
+### 1. Setting Up Data
+
 ```
-
-## Setting Up Data
-
-### 1. Input Data to DB
+### Input Data to DB
 
 Navigate to the data directory:
 
@@ -56,7 +52,7 @@ SELECT * FROM sentiment_results;
 .exit
 ```
 
-### 2. Fetch Data from DB
+### 2. Fetch Data from DB(Local)
 
 Navigate back to the root directory:
 
@@ -84,7 +80,7 @@ python3 scripts/sentiment_analysis.py
 python3 scripts/generate_reports.py
 ```
 
-## Running Tests
+###  3.Running Tests(Local)
 
 Execute unit tests for fetch_reviews and sentiment_analysis:
 
@@ -94,7 +90,7 @@ python3 -m unittest tests.test_fetch_reviews
 python3 -m unittest tests.test_sentiment_analysis
 ```
 
-## Jenkins CI/CD Pipeline as Container
+### 4. Jenkins CI/CD Pipeline as Container
 
 Build the Docker image for Jenkins:
 
@@ -108,7 +104,9 @@ Run Jenkins in a Docker container:
 docker run -p 8080:8080 -p 50000:50000 my-jenkins
 ```
 
-Access Jenkins at `http://localhost:8080/`. Retrieve the initial password from Docker logs:
+### 5. Access Jenkins 
+
+`http://localhost:8080/`. Retrieve the initial password from Docker logs:
 
 ```bash
 docker ps
