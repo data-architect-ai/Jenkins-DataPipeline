@@ -2,14 +2,7 @@ pipeline {
     agent any
     
     stages {
-        stage('Setup') {
-            steps {
-                // Set up environment, install dependencies, etc.
-                // Example:
-                sh 'pip3 install -r requirements.txt'  // Install required Python packages
-            }
-        }
-        
+                
         stage('Fetch Reviews') {
             steps {
                 sh 'python3 scripts/fetch_reviews.py'  // Execute fetch_reviews.py script
