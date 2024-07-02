@@ -1,6 +1,6 @@
 import unittest
 import sqlite3
-from fetch_reviews import create_reviews_table, fetch_reviews
+from scripts.fetch_reviews import create_reviews_table, fetch_reviews
 
 class TestFetchReviews(unittest.TestCase):
     
