@@ -85,16 +85,6 @@ python3 -m unittest tests.test_sentiment_analysis
 
 docker build -t my-jenkins .
 
-docker run -p 8080:8080 -p 50000:50000 my-jenkins
+docker build --no-cache -t my-jenkins .
 
-get container_d from
-docker ps
-
-docker logs <container_id>
-get password 
-
-enterpasswrod and setup at:
-http://localhost:8080/
-
-https://github.com/manojbusam/Jenkins-DataPipeline.git
-
+docker run -p 8080:
