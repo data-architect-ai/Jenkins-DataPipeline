@@ -94,5 +94,3 @@ get password
 enterpasswrod and setup at:
 http://localhost:8080/
 
-https://github.com/manojbusam/Jenkins-DataPipeline.git
-
