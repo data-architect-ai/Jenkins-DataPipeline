@@ -131,12 +131,10 @@ Jenkins-DataPipeline/
 ├── scripts/                    # Scripts directory
 │   ├── fetch_reviews.py        # Script to fetch customer reviews
 │   ├── sentiment_analysis.py   # Script for sentiment analysis
-│   ├── store_results.py        # Script to store sentiment results
 │   └── generate_reports.py     # Script to generate reports
 ├── tests/                      # Tests directory
 │   ├── test_fetch_reviews.py   # Unit tests for fetch_reviews.py
 │   ├── test_sentiment_analysis.py  # Unit tests for sentiment_analysis.py
-│   └── test_store_results.py   # Unit tests for store_results.py
 └── data/                       # Data directory (optional)
     ├── reviews.db              # SQLite database for customer reviews
     ├── results.db              # SQLite database for sentiment results
