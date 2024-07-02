@@ -4,7 +4,7 @@ This repository contains scripts and files for setting up a Jenkins CI/CD pipeli
 
 
 
-### 1. Setting Up Data
+### 1. Setting Up Data (Local)
 
 ```
 ### Input Data to DB
@@ -52,7 +52,7 @@ SELECT * FROM sentiment_results;
 .exit
 ```
 
-### 2. Fetch Data from DB(Local)
+### 2. Fetch Data from DB (Local)
 
 Navigate back to the root directory:
 
@@ -80,7 +80,7 @@ python3 scripts/sentiment_analysis.py
 python3 scripts/generate_reports.py
 ```
 
-###  3.Running Tests(Local)
+###  3.Running Tests (Local)
 
 Execute unit tests for fetch_reviews and sentiment_analysis:
 
@@ -90,7 +90,7 @@ python3 -m unittest tests.test_fetch_reviews
 python3 -m unittest tests.test_sentiment_analysis
 ```
 
-### 4. Jenkins CI/CD Pipeline as Container
+### 4. Run Jenkins CI/CD Pipeline as a Docker Container
 
 Build the Docker image for Jenkins:
 
@@ -104,7 +104,7 @@ Run Jenkins in a Docker container:
 docker run -p 8080:8080 -p 50000:50000 my-jenkins
 ```
 
-### 5. Access Jenkins 
+### 5. Access Jenkins Dashboard
 
 `http://localhost:8080/`. Retrieve the initial password from Docker logs:
 
