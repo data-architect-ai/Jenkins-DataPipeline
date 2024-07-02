@@ -6,6 +6,8 @@ Jenkins-DataPipeline/
 ├── README.md                   # Project README
 ├── .gitignore                  # Git ignore file
 ├── Jenkinsfile                 # Jenkins pipeline script
+├── Dockerfile                 # Jenkins pipeline script
+├── requirements.txt                 # Jenkins pipeline script
 ├── scripts/                    # Scripts directory
 │   ├── fetch_reviews.py        # Script to fetch customer reviews
 │   ├── sentiment_analysis.py   # Script for sentiment analysis
