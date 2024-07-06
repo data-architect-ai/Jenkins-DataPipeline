@@ -2,6 +2,8 @@
 
 This repository contains scripts and files for setting up a Jenkins CI/CD pipeline to transform customer reviews into sentiment analysis results.
 
+<img width="885" alt="Screenshot 2024-07-06 at 5 26 18 PM" src="https://github.com/manojbusam/Jenkins-DataPipeline/assets/44409170/6b651279-9c55-46c0-8136-f4d0d052d93a">
+
 ![Screenshot 2024-07-02 at 2 08 27 AM](https://github.com/manojbusam/Jenkins-DataPipeline/assets/44409170/aad3a392-e1d4-4992-bd89-ae8aab621d60)
 
 
