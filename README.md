@@ -6,6 +6,19 @@ This repository contains scripts and files for setting up a Jenkins CI/CD pipeli
 
 ![Screenshot 2024-07-02 at 2 08 27 AM](https://github.com/manojbusam/Jenkins-DataPipeline/assets/44409170/aad3a392-e1d4-4992-bd89-ae8aab621d60)
 
+Here's a structured process involving the five steps:
+
+1. **Setting Up Data (Local)**: Begin by navigating to the data directory and initializing SQLite databases (`reviews.db` and `results.db`). Define tables for storing customer reviews and sentiment analysis results.
+
+2. **Fetch Data from DB (Local)**: Return to the root directory, set up a virtual environment, activate it, and install necessary dependencies from `requirements.txt`. Utilize Python scripts (`fetch_reviews.py`, `sentiment_analysis.py`, `generate_reports.py`) to fetch customer reviews, perform sentiment analysis, and generate reports.
+
+3. **Running Tests (Local)**: Execute unit tests (`test_fetch_reviews.py`, `test_sentiment_analysis.py`) to validate the functionality of the data fetching and sentiment analysis processes.
+
+4. **Run Jenkins CI/CD Pipeline as a Docker Container**: Build a Docker image (`my-jenkins`) using the provided Dockerfile. Run Jenkins within a Docker container, exposing it on port 8080.
+
+5. **Access Jenkins Dashboard**: Access the Jenkins dashboard at `http://localhost:8080/` to manage and monitor the CI/CD pipeline. Retrieve the initial password from Docker logs to initiate setup.
+
+This structured approach ensures a systematic setup and execution of the Jenkins-based CI/CD pipeline for deploying ML pipelines using AWS SageMaker.
 
 ### 1. Setting Up Data (Local)
 
