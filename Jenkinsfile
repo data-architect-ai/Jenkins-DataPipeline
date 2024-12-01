@@ -13,6 +13,7 @@ pipeline {
             steps {
                 echo "Building the code"
                 sh "docker build -t data-pipeline ."
+                sh "docker run --detach 'data-pipeline'"
             }
         }
         
