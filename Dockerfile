@@ -1,5 +1,5 @@
 # Use the official Jenkins base image based on Debian
-FROM jenkins/jenkins:latest
+FROM python:3.9
 
 # Switch to root user to install packages
 USER root
@@ -21,3 +21,4 @@ RUN pip install -r /tmp/requirements.txt
 # Switch back to Jenkins user
 USER jenkins
 
+CMD python3 scripts/fetch_reviews.py
