@@ -22,3 +22,9 @@ RUN pip install -r /tmp/requirements.txt
 
 
 CMD python3 scripts/fetch_reviews.py
+CMD python3 scripts/sentiment_analysis.py
+CMD python3 scripts/generate_reports.py
+CMD python3 -m unittest tests/test_fetch_reviews.py
+CMD python3 -m unittest tests/test_sentiment_analysis.py
+CMD python3 scripts/sentiment_analysis.py
+CMD python3 scripts/generate_reports.py
