@@ -12,7 +12,7 @@ pipeline {
         stage("build"){
             steps {
                 echo "Building the code"
-                sh "docker build -t DataPipeline ."
+                sh "docker build -t data-pipeline ."
             }
         }
         
