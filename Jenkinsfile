@@ -16,7 +16,7 @@ pipeline {
                 sh "docker run --detach 'data-pipeline'"
             }
         }
-        
+        }
                 
         
     
