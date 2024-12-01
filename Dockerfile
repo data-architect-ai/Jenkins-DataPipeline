@@ -19,6 +19,6 @@ ENV PATH="/opt/venv/bin:$PATH"
 RUN pip install -r /tmp/requirements.txt
 
 # Switch back to Jenkins user
-USER jenkins
+
 
 CMD python3 scripts/fetch_reviews.py
